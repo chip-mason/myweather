@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<head>
+  <title>Weather</title>
+<style>
+  .iframe-container {
+    overflow: hidden; /* Clears the float */
+  }
+
+  .iframe-wrapper {
+    width: 50%; /* Each iframe takes half the width */
+    float: left; /* Floats the iframes to the left */
+    box-sizing: border-box; /* Includes padding and border in the width */
+    padding: 10px; /* Optional padding around iframes */
+  }
+
+  iframe {
+    width: 100%; /* Make iframe fill its wrapper */
+    height: 300px; /* Set a fixed height for the iframes */
+    border: 1px solid #ccc; /* Optional border for visualization */
+  }
+</style>
+</head>
+<body>
+<div class="iframe-container">
+  <div class="iframe-wrapper">
+    <iframe src="https://tempestwx.com/station/170830/grid" title="Iframe 1"></iframe>
+  </div>
+  <div class="iframe-wrapper">
+    <iframe src="https://tempestwx.com/station/182987/grid" title="Iframe 2"></iframe>
+  </div>
+</div>
+</body>
+</html>
